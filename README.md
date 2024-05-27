@@ -1,4 +1,4 @@
-# Turneu de Echipe - Simulare și Calcul Prestigiu
+# Simulare turneu si calcularea prestigiului
 
 ## Descriere
 Acest proiect reprezintă o soluție software pentru simularea unui turneu de echipe și calcularea prestigiului fiecărei echipe. Turneul implică 32 de echipe care se confruntă pentru a determina câștigătorul final, iar prestigiul fiecărei echipe este calculat pe baza performanțelor lor în competiție.
