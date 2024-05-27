@@ -28,10 +28,9 @@ void addTeamToBack(Node **head, Team *team)
 
 Node *readTeams(FILE *in)
 {
-    int i;
     Node *teamList = NULL;
 
-    for (i = 0; i < NO_TEAMS; i++)
+    for (int i = 0; i < NO_TEAMS; i++)
     {
         Team *team = (Team *)malloc(sizeof(Team));
         team->name = (char *)malloc(100 * sizeof(char));
