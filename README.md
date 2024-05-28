@@ -64,9 +64,8 @@ Funcția `processMatches` creează o matrice de adiacență pentru a reprezenta 
 3. Actualizează matricea de adiacență pe măsură ce meciurile sunt procesate.
 
 ###### Calcularea Prestigiului
-Prestigiul fiecărei echipe este calculat folosind funcția calculatePrestige. Prestigiul este determinat pe baza numărului de victorii ale echipei în turneu, folosind formula:
-`prestigiu = (victorii / (numărul total de echipe - 1)) + q * ((numărul total de echipe - 1 - victorii) / (numărul total de echipe - 1))`
-unde `q` este un factor constant (în acest caz, 0.15). Această formulă ia în considerare atât numărul de victorii cât și numărul de înfrângeri pentru a calcula prestigiul echipei într-un mod echitabil. Prestigiul calculat este atribuit fiecarei echipe și apoi sortat în ordine descrescătoare.
+Prestigiul fiecărei echipe este calculat folosind funcția calculate_P_R. Prestigiul este determinat pe baza numărului de victorii ale echipei în turneu, folosind formula:
+`prestigiu = q * (2 - q) ^ r / 2^l + ((2 - q) ^ l) * (q - 1)`, unde 'r' reprezinta numarul de victorii al echipei iar 'l' inaltimea arborelui, iar `q` este un factor constant (în acest caz, 0.15). Această formulă ia în considerare atât numărul de victorii cât și pentru a calcula prestigiul echipei într-un mod echitabil. Prestigiul calculat este atribuit fiecarei echipe și apoi sortat în ordine descrescătoare.
 
 ###### Algoritm 4
 1. Pentru fiecare echipă:
