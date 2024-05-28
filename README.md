@@ -66,7 +66,7 @@ Funcția `processMatches` creează o matrice de adiacență pentru a reprezenta 
 ###### Calcularea Prestigiului
 Prestigiul fiecărei echipe este calculat folosind funcția calculatePrestige. Prestigiul este determinat pe baza numărului de victorii ale echipei în turneu, folosind formula:
 `prestigiu = (victorii / (numărul total de echipe - 1)) + q * ((numărul total de echipe - 1 - victorii) / (numărul total de echipe - 1))`
-unde `q` este un factor constant (în acest caz, 0.15). Această formulă ia în considerare atât numărul de victorii cât și numărul de înfrângeri pentru a calcula prestigiul echipei într-un mod echitabil. Prestigiul calculat este stocat într-un vector și apoi sortat în ordine descrescătoare. Rezultatele sunt scrise într-un fișier text (prestige.txt), ordonat după prestigiul obținut.
+unde `q` este un factor constant (în acest caz, 0.15). Această formulă ia în considerare atât numărul de victorii cât și numărul de înfrângeri pentru a calcula prestigiul echipei într-un mod echitabil. Prestigiul calculat este atribuit fiecarei echipe și apoi sortat în ordine descrescătoare.
 
 ###### Algoritm 4
 1. Pentru fiecare echipă:
