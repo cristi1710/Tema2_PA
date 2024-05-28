@@ -70,5 +70,4 @@ Prestigiul fiecărei echipe este calculat folosind funcția calculate_P_R. Prest
 ###### Algoritm 4
 1. Pentru fiecare echipă:
     >Calculează prestigiul folosind formula dată.
-    >Stochează prestigiul într-un vector de prestigiuri.
-2. Sortează vectorul de prestigiuri în ordine crescătoare.
+2. Sortează echipele in functie de prestigiu în ordine crescătoare.
